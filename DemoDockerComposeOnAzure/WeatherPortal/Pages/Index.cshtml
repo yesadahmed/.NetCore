@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Main";
+}
+<style>
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+
+
+<div class="text-center">
+    <h1 class="display-4">Weather Oslo</h1>
+
+    <p id="myjosn" style="display:none;">@ViewData["Message"]</p>
+
+    <div id="mydiv"></div>
+    <p> Azure - Docker compose sample</p>
+</div>
+
+<script type="text/javascript">
+    laodData();
+    function laodData() {
+        debugger;
+        var obj, dbParam, xmlhttp, myObj, x, txt = "";
+
+        var check = document.getElementById('myjosn');
+        var tempjson = JSON.parse(check.innerHTML);//finlly
+        var myObj = JSON.parse(tempjson);
+
+        txt += "<table id='customers'><tr><th>TemperatureC</th><th>Summary</th><th>Date</th></tr ";
+        for (x in myObj) {
+            txt += "<tr><td>" + myObj[x].temperatureC + "</td>";
+            txt += "<td>" + myObj[x].summary + "</td>";
+            txt += "<td>" + new Date(myObj[x].date).toLocaleDateString("en-US") + "</td></tr>";
+        }
+        txt += "</table>"
+
+        document.getElementById("mydiv").innerHTML = txt;
+    }
+
+</script>

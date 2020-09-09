@@ -1,0 +1,68 @@
+services:
+  weatherapi:
+    build:
+      context: C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure
+      dockerfile: WeatherAPI/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: WeatherAPI
+      target: base
+    container_name: WeatherAPI
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: weatherapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/WeatherAPI.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    tty: true
+    volumes:
+    - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI:/app:rw
+    - C:\Users\adsa\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\adsa\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\adsa\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\adsa\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure:/src:rw
+  weatherportal:
+    build:
+      context: C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure
+      dockerfile: WeatherPortal/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: WeatherPortal
+      target: base
+    container_name: WeatherPortal
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: weatherportal:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/netcoreapp3.1/WeatherPortal.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 80
+    - target: 443
+    tty: true
+    volumes:
+    - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherPortal:/app:rw
+    - C:\Users\adsa\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\adsa\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\adsa\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\adsa\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure:/src:rw
+version: '3.4'

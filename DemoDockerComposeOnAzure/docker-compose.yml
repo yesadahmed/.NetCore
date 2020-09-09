@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  weatherportal:
+    image: ${DOCKER_REGISTRY-}weatherportal
+    build:
+      context: .
+      dockerfile: WeatherPortal/Dockerfile
+
+  weatherapi:
+    image: ${DOCKER_REGISTRY-}weatherapi
+    build:
+      context: .
+      dockerfile: WeatherAPI/Dockerfile
+

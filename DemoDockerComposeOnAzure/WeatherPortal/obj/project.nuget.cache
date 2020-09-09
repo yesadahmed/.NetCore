@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AUpwQO16lYObPViT/emMvDTKA8QFNwdXn0PrmUtH1usDLLHEjmv/kvvFfZL8rDcbgWGe4xNdlssTEJZs/eX5hw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\WeatherPortal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adsa\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\adsa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

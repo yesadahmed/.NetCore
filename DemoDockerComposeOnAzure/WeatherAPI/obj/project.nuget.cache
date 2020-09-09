@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f90vY8v/Lbwz5+6N/MfKrwWvhZuKo7+3KcWAoWoMq1dLYq1fdhySTv9s8c0TVsfobcJ6jWHa5KP9y2KRn8SQQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adsa\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
