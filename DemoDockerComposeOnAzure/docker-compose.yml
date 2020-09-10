@@ -6,7 +6,6 @@ services:
     build:
       context: .
       dockerfile: WeatherPortal/Dockerfile
-
   weatherapi:
     image: ${DOCKER_REGISTRY-}weatherapi
     build:

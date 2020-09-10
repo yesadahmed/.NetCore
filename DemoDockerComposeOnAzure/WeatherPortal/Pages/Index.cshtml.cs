@@ -23,25 +23,45 @@ namespace WeatherPortal.Pages
         {
             ViewData["Message"] = "Weather Report";
 
-            using (var client = new System.Net.Http.HttpClient())
+            try
             {
-                // Call *mywebapi*, and display its response in the page
-                var request = new System.Net.Http.HttpRequestMessage();
-                request.RequestUri = new Uri("http://weatherapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
-                //request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
-                var response = await client.SendAsync(request);
+                using (var client = new System.Net.Http.HttpClient())
+                {
+                    // Call *mywebapi*, and display its response in the page
+                    var request = new System.Net.Http.HttpRequestMessage();
+                    request.RequestUri = new Uri("http://weatherapi/WeatherForecast");
+                    var response = await client.SendAsync(request);
+                    
+                    ViewData["Message"] = JsonConvert.SerializeObject(await response.Content.ReadAsStringAsync());
+                    //ViewData["MsgJson"] = JsonConvert.SerializeObject(data);
 
-
-
-
-                var josn = await response.Content.ReadAsStringAsync();
-                var data = JsonConvert.DeserializeObject<List<WeatherModel>>(josn);
-
-                ViewData["Message"] = JsonConvert.SerializeObject(await response.Content.ReadAsStringAsync());
-                ViewData["MsgJson"] = JsonConvert.SerializeObject(data);
-
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewData["Message"] = JsonConvert.SerializeObject(GetStaticData());
 
             }
+
         }
+
+
+        #region static code
+        public IEnumerable<WeatherData> GetStaticData()
+        {
+            string[] Summaries = new[]
+         {
+            "Freezing_StaticData", "Bracing_StaticData", "Chilly_StaticData", "Cool_StaticData", "Mild_StaticData", "Warm_StaticData", "Balmy_StaticData", "Hot_StaticData", "Sweltering_StaticData", "Scorching_StaticData"
+        };
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(index => new WeatherData
+            {
+                date = DateTime.Now.AddDays(index),
+                temperatureC = rng.Next(-20, 55),
+                summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+        #endregion
     }
 }

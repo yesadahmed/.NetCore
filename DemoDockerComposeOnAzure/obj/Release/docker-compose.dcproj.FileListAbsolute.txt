@@ -1,0 +1,15 @@
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherPortal.Views.dll
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherPortal.Views.pdb
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\appsettings.Development.json
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\appsettings.json
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\Properties\launchSettings.json
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherPortal.exe
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherAPI.exe
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherAPI.dll
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherPortal.dll
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\Newtonsoft.Json.dll
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherPortal.pdb
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\bin\Release\WeatherAPI.pdb
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\obj\Release\docker-compose.dcprojAssemblyReference.cache
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\obj\Release\docker-compose.dcproj.CopyComplete

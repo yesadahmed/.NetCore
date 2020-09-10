@@ -3,7 +3,7 @@ version: '3.4'
 services:
   weatherportal:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=https://+:443;http://+:80
     ports:
       - "80"
@@ -12,7 +12,7 @@ services:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
   weatherapi:
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
     ports:
       - "80"
 

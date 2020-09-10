@@ -4,7 +4,7 @@ services:
       context: C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure
       dockerfile: WeatherAPI/Dockerfile
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_ENVIRONMENT: Production
     image: weatherapi
     ports:
     - target: 80
@@ -13,7 +13,7 @@ services:
       context: C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure
       dockerfile: WeatherPortal/Dockerfile
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_ENVIRONMENT: Production
       ASPNETCORE_URLS: https://+:443;http://+:80
     image: weatherportal
     ports:

@@ -50,7 +50,12 @@
 
         var check = document.getElementById('myjosn');
         var tempjson = JSON.parse(check.innerHTML);//finlly
-        var myObj = JSON.parse(tempjson);
+        try {
+            myObj = JSON.parse(tempjson);
+        } catch (e) {
+            myObj = tempjson;//case dummy
+        }
+
 
         txt += "<table id='customers'><tr><th>TemperatureC</th><th>Summary</th><th>Date</th></tr ";
         for (x in myObj) {

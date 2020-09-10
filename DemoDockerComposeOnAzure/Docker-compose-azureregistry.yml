@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  weatherportal:
+    image: "weatherportal:latest adnancontregistry.azurecr.io/weatherportal:latest"
+    build:
+      context: .
+      dockerfile: WeatherPortal/Dockerfile
+  weatherapi:
+    image: "adnancontregistry.azurecr.io/weatherapi:latest"
+    build:
+      context: .
+      dockerfile: WeatherAPI/Dockerfile
+
