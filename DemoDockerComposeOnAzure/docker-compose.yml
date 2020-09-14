@@ -3,6 +3,8 @@ version: '3.4'
 services:
   weatherportal:
     image: ${DOCKER_REGISTRY-}weatherportal
+    ports:
+      - "8888:80"
     build:
       context: .
       dockerfile: WeatherPortal/Dockerfile
@@ -11,4 +13,3 @@ services:
     build:
       context: .
       dockerfile: WeatherAPI/Dockerfile
-

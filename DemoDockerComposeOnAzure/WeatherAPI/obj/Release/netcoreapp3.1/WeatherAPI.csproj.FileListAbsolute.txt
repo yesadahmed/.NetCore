@@ -17,3 +17,5 @@ C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\obj\
 C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\obj\Release\netcoreapp3.1\WeatherAPI.dll
 C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\obj\Release\netcoreapp3.1\WeatherAPI.pdb
 C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\obj\Release\netcoreapp3.1\WeatherAPI.genruntimeconfig.cache
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI\obj\Release\netcoreapp3.1\WeatherAPI.csproj.CopyComplete

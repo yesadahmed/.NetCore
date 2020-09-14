@@ -17,6 +17,8 @@ services:
       ASPNETCORE_URLS: https://+:443;http://+:80
     image: weatherportal
     ports:
+    - published: 8888
+      target: 80
     - target: 80
     - target: 443
     volumes:
