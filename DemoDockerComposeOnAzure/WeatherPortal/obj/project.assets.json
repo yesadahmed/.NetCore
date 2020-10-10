@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\WeatherPortal.csproj",
+      "projectUniqueName": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\WeatherPortal.csproj",
       "projectName": "WeatherPortal",
-      "projectPath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\WeatherPortal.csproj",
+      "projectPath": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\WeatherPortal.csproj",
       "packagesPath": "C:\\Users\\adsa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\obj\\",
+      "outputPath": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,7 +187,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

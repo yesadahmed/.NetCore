@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sOWsEwiUc57CyoPASUXoYfEXxpqGLrnz3V1Pl6D6eUKYyG2F+AOJ8jeyhFHnjX5TnHkgkByXM8MTGb2es3gRbA==",
+  "dgSpecHash": "LA5JrXutWCXaooJB6tG2VlrClPsYxe55R7jK+Hu/s2uHDNtOhC1pGgVdwIabOad5OJntEzCDltGhiPBzLFl0eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
+  "projectFilePath": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adsa\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\adsa\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"

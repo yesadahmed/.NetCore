@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj": {}
+    "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj": {
+    "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
+        "projectUniqueName": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
         "projectName": "WeatherAPI",
-        "projectPath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
+        "projectPath": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\WeatherAPI.csproj",
         "packagesPath": "C:\\Users\\adsa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adsa\\source\\repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\obj\\",
+        "outputPath": "C:\\Users\\adsa\\Source\\Repos\\Git\\.NetCore\\DemoDockerComposeOnAzure\\WeatherAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

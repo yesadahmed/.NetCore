@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI:/app
-      - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure:/src
+      - C:\Users\adsa\Source\Repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherAPI:/app
+      - C:\Users\adsa\Source\Repos\Git\.NetCore\DemoDockerComposeOnAzure:/src
       - C:\Users\adsa\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\adsa\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -41,8 +41,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherPortal:/app
-      - C:\Users\adsa\source\repos\Git\.NetCore\DemoDockerComposeOnAzure:/src
+      - C:\Users\adsa\Source\Repos\Git\.NetCore\DemoDockerComposeOnAzure\WeatherPortal:/app
+      - C:\Users\adsa\Source\Repos\Git\.NetCore\DemoDockerComposeOnAzure:/src
       - C:\Users\adsa\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\adsa\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
